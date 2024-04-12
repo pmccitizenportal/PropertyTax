@@ -498,24 +498,23 @@
         <h1><img src="PMC Logo.png" alt="Image Description">Property Tax Management System</h1>
 
         <div class="subheading">
-            <a class="homepg" onclick="window.location.href='https://pmccitizenportal.github.io/CitizenPortal/'"
-                style="float:left; margin-top: 12px; margin-left: 10px;" target="_blank"><b>HOME</b></a>
-            <a class="exportbt" onclick="exportToPDF()"
-                style="float:right; margin-top: 12px; margin-right: 10px;"><b>EXPORT
-                    TO PDF</b></a>
+            <a class="homepg" href="https://pmccitizenportal.github.io/CitizenPortal/" target="_blank"><b>HOME</b></a>
             <div class="text-container">
                 <h3>PROPERTY TAX INSIGHTS</h3>
             </div>
+            <a class="exportbt" onclick="exportToPDF()"><b>EXPORT TO PDF</b></a>
         </div>
 
-        <div class="dropdown" id="dropdown">
-            <label for="property-id">VIEW PROPERTY DETAILS:</label>
-            <select id="property-id" onchange="toggleContainerVisibility(); showElements();">
-                <option value="Select Property ID">Select Property ID</option>
-                <option value="PID0387">PID0387</option>
-                <option value="PID0593">PID0593</option>
-                <option value="PID0825">PID0825</option>
-            </select>
+        <div class="dropdown-container">
+            <div class="dropdown" id="dropdown">
+                <label for="property-id">VIEW PROPERTY DETAILS:</label>
+                <select id="property-id" onchange="toggleContainerVisibility(); showElements();">
+                    <option value="Select Property ID">Select Property ID</option>
+                    <option value="PID0387">PID0387</option>
+                    <option value="PID0593">PID0593</option>
+                    <option value="PID0825">PID0825</option>
+                </select>
+            </div>
         </div>
 
         <div class="container" id="container">
